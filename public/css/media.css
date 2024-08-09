@@ -1,0 +1,46 @@
+
+
+@media (max-width: 1000px) {
+
+.topimagewrapper{
+min-height:400px;
+}
+
+
+.contactform h4{
+font-size:22px;
+}
+#main .textarea{
+height:60px;
+}
+
+body{
+text-align:center;
+}
+
+
+.contactform{
+max-width:100%;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.topimagewrapper{
+position:relative;
+min-height:auto;
+}
+
+.topimage{
+position:relative;
+}
+
+
+.contactform{
+position:relative;
+}
+
+}
+
+
