@@ -1,4 +1,5 @@
-const PROD_FETCH_URL = "https://api.zootastic.app/";
+"use server";
+const PROD_FETCH_URL = "https://api.desocial-app.com/";
 import { cookies } from "next/headers";
 import { Api_Response } from "./types";
 

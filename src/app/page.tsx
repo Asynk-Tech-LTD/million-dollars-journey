@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import SignUpForm from "../components/SignUpForm";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         </header>
 
         <section className="w-100 h-100 d-flex align-items-center">
-          <div className="container-fluid ">
+          <div className="container">
             <div className="row topimagewrapper">
               <div
                 className="col-lg-6 col-md-7 topimage startAnimation animated text-white"
@@ -53,41 +54,7 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <form method="post">
-                      <div>
-                        <div className="d-flex flex-column gap-3">
-                          <div className="">
-                            <label htmlFor="name">Name:</label>
-                            <input
-                              type="text"
-                              placeholder="Your name"
-                              name="name"
-                              id="name"
-                              className="form-control"
-                            />
-                          </div>
-
-                          <div className="contact2">
-                            <label htmlFor="email">Email:</label>
-                            <input
-                              type="text"
-                              placeholder="Your e-mail address"
-                              name="email"
-                              id="email"
-                              className="form-control"
-                            />
-                          </div>
-
-                          <div className="d-flex justify-conten-center">
-                            <div className="buttonmain1 text-white py-2 mt-0 ">
-                              Send
-                            </div>
-                          </div>
-
-                          {/* <ul id="response"></ul> */}
-                        </div>
-                      </div>
-                    </form>
+                    <SignUpForm />
                   </div>
                 </div>
               </div>
