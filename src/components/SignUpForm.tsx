@@ -19,13 +19,15 @@ const SignUpForm = () => {
       IdForm: 1,
       FullName: name,
       Email: email,
+      Phone: phone,
+      Comment: comment,
     });
     if (response.StatusCode === 200) {
       setError("");
-      setMessage("Thank you for signing up!");
+      setMessage(t("Hero.Thank you for signing up!"));
     } else {
       setError(response.ExceptionMsg);
-      setMessage("Error signing up!");
+      setMessage(t("Hero.Error signing up!"));
     }
   };
 
