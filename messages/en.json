@@ -1,0 +1,42 @@
+{
+  "English": "English",
+  "Arabic": "Arabic",
+  "Hero": {
+    "Title": "Join our Journey On The Road to The First Million",
+    "Subtitle": "Your journey to the First Million Saudi Riyals starts here.",
+    "Name": "Name",
+    "Email": "Email",
+    "Phone": "Phone",
+    "Comment": "Comment",
+    "Your Name": "Your Name",
+    "Your Email": "Your Email",
+    "Your Phone": "Your Phone",
+    "Your Comment": "Your Comment",
+    "Signup": "Sign Up",
+    "Send": "Send",
+    "Thank you for signing up!": "Thank you for signing up!",
+    "Error signing up!": "Error signing up!"
+  },
+  "HowItWorks": {
+    "Title": "How It Works",
+    "Step1": {
+      "Title": "Sign Up",
+      "Description": "Join the journey by signing up with your details to stay connected and informed."
+    },
+    "Step2": {
+      "Title": "Start Your Niche",
+      "Description": "Focus on your unique area of expertise and receive targeted updates to help you grow."
+    },
+    "Step3": {
+      "Title": "Build Your Community",
+      "Description": "Connect with others, share insights, and grow your network for mutual success."
+    },
+    "Step4": {
+      "Title": "Celebrate Milestones",
+      "Description": "Recognize and enjoy each milestone as you progress toward your goals."
+    }
+  },
+  "Footer": {
+    "Subtitle": "Because you are worthy. Build your community to make your first one million Saudi Riyals"
+  }
+}
