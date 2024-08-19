@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar">
       <Head>
         <link
           href="http://fonts.googleapis.com/css?family=PT+Sans"

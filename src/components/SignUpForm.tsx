@@ -13,6 +13,13 @@ const SignUpForm = () => {
   const [phone, setPhone] = useState<string>("");
   const [comment, setComment] = useState<string>("");
 
+  const clearForm = () => {
+    setEmail("");
+    setName("");
+    setPhone("");
+    setComment("");
+  };
+
   const signUp = async (e: any) => {
     e.preventDefault();
     const response: Api_Response = await fetchApi("Forms/FillForm", "POST", {
@@ -25,6 +32,7 @@ const SignUpForm = () => {
     if (response.StatusCode === 200) {
       setError("");
       setMessage(t("Hero.Thank you for signing up!"));
+      clearForm();
     } else {
       setError(response.ExceptionMsg);
       setMessage(t("Hero.Error signing up!"));
@@ -53,7 +61,7 @@ const SignUpForm = () => {
 
           <div className="contact2">
             <label htmlFor="email" className="mb-3">
-              {t("Hero.Email")}: :
+              {t("Hero.Email")}:
             </label>
             <input
               type="text"
@@ -69,7 +77,7 @@ const SignUpForm = () => {
           {/* add phone input and comment text-box  */}
           <div className="contact2">
             <label htmlFor="phone" className="mb-3">
-              {t("Hero.Phone")}: :
+              {t("Hero.Phone")}:
             </label>
             <input
               type="text"
@@ -84,7 +92,7 @@ const SignUpForm = () => {
           </div>
           <div className="contact2">
             <label htmlFor="comment" className="mb-3">
-              {t("Hero.Comment")}: :
+              {t("Hero.Comment")}:
             </label>
             <textarea
               placeholder={t("Hero.Your Comment")}

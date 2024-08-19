@@ -94,10 +94,12 @@ export default function Home() {
                   className="col-lg-3 col-12 startAnimation animated"
                   data-animate="slideInLeft">
                   <div>
-                    <img
-                      src="images/icon_step1.png"
+                    <Image
+                      src="/images/icon_step1.png"
                       alt="Step 1"
-                      className="icon w-100"
+                      className="icon h-100 w-100"
+                      width={300}
+                      height={300}
                     />
                     <div className="col-lg-12">
                       <h3 className="primary-color">
@@ -112,10 +114,12 @@ export default function Home() {
                   className="col-lg-3 col-12 startAnimation animated"
                   data-animate="slideInLeft">
                   <div className="">
-                    <img
-                      src="images/icon_step2.png"
+                    <Image
+                      src="/images/icon_step2.png"
                       alt="Step 2"
-                      className="icon w-100"
+                      className="icon h-100 w-100"
+                      width={300}
+                      height={300}
                     />
                     <div className="col-lg-12">
                       <h3 className="primary-color">
@@ -130,10 +134,12 @@ export default function Home() {
                   className="col-lg-3 col-12 startAnimation animated"
                   data-animate="slideInRight">
                   <div className="">
-                    <img
-                      src="images/icon_step3.png"
+                    <Image
+                      src="/images/icon_step3.png"
                       alt="Step 3"
-                      className="icon"
+                      className="icon h-100 w-100"
+                      width={300}
+                      height={300}
                     />
                     <div className="col-lg-12">
                       <h3 className="primary-color">
@@ -147,10 +153,12 @@ export default function Home() {
                   className="col-lg-3 col-12 startAnimation animated"
                   data-animate="slideInRight">
                   <div className="">
-                    <img
-                      src="images/icon_step4.png"
+                    <Image
+                      src="/images/icon_step4.png"
                       alt="Step 3"
-                      className="icon"
+                      className="icon h-100 w-100"
+                      width={300}
+                      height={300}
                     />
                     <div className="col-lg-12">
                       <h3 className="primary-color">
