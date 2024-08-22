@@ -8,6 +8,8 @@
     "Email": "Email",
     "Phone": "Phone",
     "Comment": "Comment",
+    "Niche": "Niche",
+    "Select Niche": "Select Niche",
     "Your Name": "Your Name",
     "Your Email": "Your Email",
     "Your Phone": "Your Phone",
@@ -15,7 +17,14 @@
     "Signup": "Sign Up",
     "Send": "Send",
     "Thank you for signing up!": "Thank you for signing up!",
-    "Error signing up!": "Error signing up!"
+    "Error signing up!": "Error signing up!",
+    "Niches": {
+      "Retail": "Retail",
+      "E-commerce": "E-commerce",
+      "Marketing Services": "Marketing Services",
+      "Consulting": "Consulting",
+      "Other": "Other"
+    }
   },
   "HowItWorks": {
     "Title": "How It Works",

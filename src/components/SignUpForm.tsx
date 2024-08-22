@@ -1,7 +1,7 @@
 "use client";
 import { fetchApi } from "@/utils/connection";
 import { Api_Response } from "@/utils/types";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 const SignUpForm = () => {
@@ -12,12 +12,12 @@ const SignUpForm = () => {
   const [message, setMessage] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
   const [comment, setComment] = useState<string>("");
+  const [niche, setNiche] = useState<string>("");
 
   const clearForm = () => {
     setEmail("");
     setName("");
     setPhone("");
-    setComment("");
   };
 
   const signUp = async (e: any) => {
@@ -28,6 +28,7 @@ const SignUpForm = () => {
       Email: email,
       Phone: phone,
       Comment: comment,
+      Niche: niche,
     });
     if (response.StatusCode === 200) {
       setError("");
@@ -39,12 +40,16 @@ const SignUpForm = () => {
     }
   };
 
+  useEffect(() => {
+    console.log("niche", niche);
+  }, [niche]);
+
   return (
     <form onSubmit={(e) => signUp(e)}>
       <div>
         <div className="d-flex flex-column gap-3">
           <div className="">
-            <label htmlFor="name" className="mb-3">
+            <label htmlFor="name" className="mb-1">
               {t("Hero.Name")}:
             </label>
             <input
@@ -60,7 +65,7 @@ const SignUpForm = () => {
           </div>
 
           <div className="contact2">
-            <label htmlFor="email" className="mb-3">
+            <label htmlFor="email" className="mb-1">
               {t("Hero.Email")}:
             </label>
             <input
@@ -76,7 +81,7 @@ const SignUpForm = () => {
           </div>
           {/* add phone input and comment text-box  */}
           <div className="contact2">
-            <label htmlFor="phone" className="mb-3">
+            <label htmlFor="phone" className="mb-1">
               {t("Hero.Phone")}:
             </label>
             <input
@@ -91,7 +96,28 @@ const SignUpForm = () => {
             />
           </div>
           <div className="contact2">
-            <label htmlFor="comment" className="mb-3">
+            <label htmlFor="phone" className="mb-1">
+              {t("Hero.Niche")}:
+            </label>
+            <select
+              name="niche"
+              id="niche"
+              className="form-select"
+              onChange={(e) => console.log(e.target.value)}
+              required>
+              <option value="" disabled selected>
+                {t("Hero.Select Niche")}
+              </option>
+
+              {Niches.map((niche, index) => (
+                <option key={index} value={t(`Hero.Niches.${niche.value}`)}>
+                  {t(`Hero.Niches.${niche.label}`)}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="contact2">
+            <label htmlFor="comment" className="mb-1">
               {t("Hero.Comment")}:
             </label>
             <textarea
@@ -113,9 +139,11 @@ const SignUpForm = () => {
             </button>
           </div>
 
-          <div id="response" className={error !== "" ? "text-danger" : ""}>
-            {message}
-          </div>
+          {message && (
+            <div id="response" className={error !== "" ? "text-danger" : ""}>
+              {message}
+            </div>
+          )}
         </div>
       </div>
     </form>
@@ -123,3 +151,26 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
+
+const Niches = [
+  {
+    value: "Retail",
+    label: "Retail",
+  },
+  {
+    value: "E-commerce",
+    label: "E-commerce",
+  },
+  {
+    value: "Marketing Services",
+    label: "Marketing Services",
+  },
+  {
+    value: "Consulting",
+    label: "Consulting",
+  },
+  {
+    value: "Other",
+    label: "Other",
+  },
+];

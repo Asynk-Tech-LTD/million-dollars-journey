@@ -48,7 +48,7 @@ export default function Home() {
                 data-animate="slideInRight">
                 <div className="contactform">
                   <div className="text-white">
-                    <h4 className="primary-color">{t("Hero.Signup")}</h4>
+                    <h4 className="primary-color pt-0">{t("Hero.Signup")}</h4>
                   </div>
 
                   <div>

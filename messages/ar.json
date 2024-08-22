@@ -8,6 +8,8 @@
     "Email": "البريد الإلكتروني",
     "Phone": "الهاتف",
     "Comment": "تعليق",
+    "Niche": "مجالك",
+    "Select Niche": "اختر مجالًا",
     "Your Name": "اسمك",
     "Your Email": "بريدك الإلكتروني",
     "Your Phone": "هاتفك",
@@ -15,7 +17,15 @@
     "Signup": "سجل",
     "Send": "إرسال",
     "Thank you for signing up!": "شكرًا لتسجيلك!",
-    "Error signing up!": "خطأ في التسجيل!"
+    "Error signing up!": "خطأ في التسجيل!",
+
+    "Niches": {
+      "Retail": "قطاع التجزئة",
+      "E-commerce": "التجارة الإلكترونية",
+      "Marketing Services": "خدمات التسويق",
+      "Consulting": "الاستشارات",
+      "Other": "آخر"
+    }
   },
   "HowItWorks": {
     "Title": "كيف يعمل",
@@ -37,6 +47,6 @@
     }
   },
   "Footer": {
-    "Subtitle": "لأنك تستحق. قم ببناء مجتمعك لتحقيق مليون ريال سعودي أولى"
+    "Subtitle": "لأنك تستحق. قم ببناء مجتمعك لتحقيق مليون ريال سعودي"
   }
 }
